@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 <html>
 	<head>
-		        <title>{% block title %}Chase Weyer - About Me{% endblock%}</title>
+		<title>{% block title %}Chase Weyer - Welcome{% endblock%}</title>
 	</head>			
 <body>
-		          {% block maincontent %}
-			        <h2>Welcome</h2>
-				                <div id = "container">
-							                        <div id="picture">
-											                                <img src="images/profilephoto.jpg" width="250px" height="250px">
-															                        </div>
+{% block maincontent %}
+<h2>Welcome</h2>
+  <div id = "container">
+    <div id="picture">
+											                              		<img src="images/profilephoto.jpg" width="250px" height="250px">
+															                             	 </div>
 																		                        <h3><strong>WELCOME TO MY WEBSITE!</strong></H3>
 																					                        <p>Thank you for visiting my personal, professional website. Just to give an introduction,
 																								                        my name is <strong>Chase Weyer</strong>, I'm <strong>30 years old</strong>, currently reside in
@@ -20,7 +20,8 @@
 																																							                        <strong>E-Mail</strong> if you would like to network or have a professional opportunity
 																																										                        you believe I would be interested in. I will reply as promptly as possible!</p>
 																								                        <p>Once again, thank you for visiting my website!
-																											                        </p>
+																											                  </p>
+</div>
 
 																																			          {% endblock %}
 																																				   </body>

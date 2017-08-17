@@ -3,52 +3,44 @@
 <html>
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link href="personalwebpage.css" rel = "stylesheet" type = "text/css"><!-- #Import UTF-8 Character set -->
-                <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		                <!-- Latest compiled and minified CSS -->
-				                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="personalwebpage.css" rel = "stylesheet" type = "text/css">
 
-						                <!-- Latest compiled and minified Javascript -->
-								                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-										                <!-- Local CSS -->
-												                <link rel="stylesheet" href="{% static 'blog/main.css' %}">
+<!-- Latest compiled and minified Javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="{% static 'blog/main.css' %}">
 
 <title>{% block title %}Chase Weyer{% endblock %}</title>
 </head>
-	<body>
-	  <div class="navbar navbar-inverse navbar-fixed-left">
-	  <a class="navbar-brand" href="#">Chase Weyer</a>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-left">
+<a class="navbar-brand" href="#">Chase Weyer</a>
   <li class="divider"></li>
-  <ul class="nav navbar-nav">
-	    <li><a href="{% url 'index' %}">Welcome</a></li>
-	      <li><a href="{% url 'about' %}">About</a></li>
-	       <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Professional<span class="caret"></span></a>
-		             <ul class="dropdown-menu" role="menu">
-				                   <li><a href="{% url 'portfolio' %}">Portfolio and Skills</a></li>
-						                 <li><a href="{% url 'resume' %}">Resume</a></li>
-								 <li><a href="{% url 'looking_for' %}">Looking For...</a></li>
-								          </ul>
-							          </li>
-						   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<span class="caret"></span></a>
-					      <ul class="dropdown-menu" role="menu">
-				         <li><a href="https://www.linkedin.com/in/chase-weyer-4a5216a3">LinkedIn</a></li>
-		         <li><a href="https://github.com/metalhero">GitHub</a></li>
-      <li><a href="https://stackoverflow.com/users/8440440/chase?tab=profile">StackOverflow</a></li>
-      <li><a href="mailto:cpwfe87@gmail.com">E-mail</a></li>
-     </ul>
-   </li>
-   <li><a href="{% url 'post_list' %}">Blog</a></li>
+  	<ul class="nav navbar-nav">
+		<li><a href="{% url 'index' %}">Welcome</a></li>
+		<li><a href="{% url 'about' %}">About</a></li>
+		<li><a href="{% url 'portfolio' %}">Portfolio and Skills</a></li>
+		<li><a href="{% url 'resume' %}">Resume</a></li>
+		<li><a href="{% url 'looking_for' %}">Looking For...</a></li>
+  		<li><a href="https://www.linkedin.com/in/chase-weyer-4a5216a3">LinkedIn</a></li>
+		<li><a href="https://github.com/metalhero">GitHub</a></li>
+      		<li><a href="https://stackoverflow.com/users/8440440/chase?tab=profile">StackOverflow</a></li>
+   		<li><a href="{% url 'post_list' %}">Blog</a></li>
   </ul>
-  </div>
+ </div>
 	{% block maincontent %} 
     <h2></h2>
     <div id="container">
     </div>
-  </div>
   {% endblock %}
+  <br>
     <div class="footer">
 		<p>Page owned and operated by Chase Weyer</p>
+		<p><a href="mailto:cpwfe87@gmail.com">E-mail</a></p>
 	</div>
  </body>
 </html>
