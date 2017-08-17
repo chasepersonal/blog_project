@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+<html>
+	<head>
+	</head>
+	<title>{% block title %}Chase Weyer-Blog{% endblock %}</title>
+	<body>
+		{% block maincontent %}
+		{% for post in posts %}
+			<h2>Blog</h2>
+		<div id="container">
+			<h3 class="center">{{post.title}}</h3>
+			<br>
+			<p class="center">Published: {{post.published_date}}</p>
+			<p>{{post.text|linebreaksbr}}</p>
+		</div>
+		{% endfor %}
+		{% endblock %}
+	</body>
+</html>

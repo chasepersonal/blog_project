@@ -1,0 +1,12 @@
+# Virtual Environment Files
+/personal_blog_env
+
+# Core Python Files
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+settings.py
