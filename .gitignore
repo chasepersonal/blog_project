@@ -9,4 +9,6 @@ myvenv
 db.sqlite3
 /static
 .DS_Store
-/settings
+base.py
+dev.py
+prod.py

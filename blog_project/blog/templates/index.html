@@ -8,7 +8,8 @@
 <h2>Welcome</h2>
   <div id = "container">
     <div id="picture">
-											                              		<img src="images/profilephoto.jpg" width="250px" height="250px">
+	{% load staticfiles %} 							                              		
+	<img src="{% static 'blog/images/profilephoto.jpg' %}" width="200px" height="200px">
 															                             	 </div>
 																		                        <h3><strong>WELCOME TO MY WEBSITE!</strong></H3>
 																					                        <p>Thank you for visiting my personal, professional website. Just to give an introduction,

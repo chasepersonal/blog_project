@@ -1,47 +1,19 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-
-<!-- #BeginTemplate "template.dwt" -->
-
+{% extends 'base.html' %}
+<html>
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link href="personalwebpage.css" rel = "stylesheet" type = "text/css">
-<!-- #BeginEditable "doctitle" -->
-	<title>Chase Weyer - Resume</title>
+	<title>{% block title %}Chase Weyer - Resume{% endblock %}</title>
 <!-- #EndEditable -->
 </head>
   <body>
-  <div id="header">
-   <h1>Chase Weyer</h1>
-  </div>
-  <div id="page">
-    <div id="nav">
-      <ul id="navlist">
-	    <li><a href="index.html">Welcome</a></li>
-	    <li><a href="about.html">About</a></li>
-	    <li><a href="#">Professional</a>
-	      <ul>
-	        <li><a href="portfolio.html">Portfolio and Skills</a></li>
-	        <li><a href="resume.html">Resume</a></li>
-	        <li><a href="looking_for.html">Looking For...</a></li>
-	      </ul>
-	    </li>
-	    <li><a href="#">Social</a>
-	      <ul>
-	        <li><a href ="https://www.linkedin.com/in/chase-weyer-4a5216a3">LinkedIn</a></li>
-	        <li><a href="https://github.com/metalhero">GitHub</a></li>
-	        <li><a href="mailto:chase.p.weyer@chasepweyer.com">E-Mail</a></li>
-	      </ul>
-	    </li>
-      </ul>
-    </div>
-  </div>
-  <p><br></p>
-    <!-- #BeginEditable "maincontent" -->
+     {% block maincontent %} 
      <h2>Resume</h2>
      <div id = "container">
 		<p>Here are my most recent professional positions held in the past 5 years. If you have any questions about any of the positions, or would like to 
-		set up an interview because my experience matches a position you have open, feel free to contact me by <a href="mailto:chase.p.weyer@chasepweyer.com"><b>E-Mail</b></a>.</p>
+		set up an interview because my experience matches a position you have open, feel free to contact me by <a href="mailto:cpwfe87@gmail.com"><b>E-Mail</b></a>.</p>
+		<h3 class="center"><strong>Snagajob</strong></h3>
+		<p><strong>Current Employer:</strong> Started 4/2017<p>
+		<p><strong>Position Held:</strong> Customer Support Specialist - PeopleMatter</p>
+		<p>I work primarily as a Tier 1 type of customer service specialist and handle inbound phone calls, e-mails, and chats for the PeopleMatter Human Resources software. Troubleshooting will range from password resets to explaining account settings and providing walkthroughs to integration support between the our platform and the clients 3rd Party Payroll software. Not only do I utilize internal company systems, but also JIRA, Slack, Okta, Salesforce, Google Drive, Zendesk, and USCIS depending on the customers situation.
 		<h3 class="center"><strong>Benefitfocus</strong></h3>
 		<p><strong>Former Employer:</strong> Employed from 8/2016 to 10/2016</p>
 		<p><strong>Position Held:</strong> Benefits Administrator</p>
@@ -77,7 +49,7 @@
 		one of the departments I enjoyed being in. As a shoe salesman, I assist customers in shoe sales, finding certain shoes and shoe products,
 		returning shoe products to the floor, and ensuring the overall cleanliness of the department.
 		</p>
-		<p class=""center">Inventory and Merchandising</p>
+		<p class="center"><strong>Inventory and Merchandising</strong></p>
 		<p>As of the beginning of February, our store changed it's departments from specific ones to more generic ones. Now the store is split into 
 		Service Experience and Inventory and Merchandising. I got assigned to the Inventory and Merchandising team and it is very similar to the Rover 
 		position that I held before. The only difference is that my focus is more on keeping the floor clean and putting product on the floor than 
@@ -123,22 +95,11 @@
 		<br>I did such a good job with my customer service and processing that I would get compliments from
 		my manager when going over call reviews and production Q&A.</p>
       </div>
-    <!-- #EndEditable -->
-    <footer>
-    <div id="bottomnav">
-    <p>
-      <a href="index.html">Home</a> | 
-      <a href="#">About</a> | 
-      <a href="portfolio.html">Portfolio and Skills</a> | 
-      <a href="resume.html">Resume</a> | 
-      <a href="looking_for.html">Looking For...</a> | 
-      <a href="https://www.linkedin.com/in/chase-weyer-4a5216a3">LinkedIn</a> | 
-      <a href="https://github.com/metalhero">GitHub</a> | 
-      <a href="mailto:chase.p.weyer@chasepweyer.com">E-Mail</a> 
-    </p>
-    </div>
-  </footer>
+      <br>
+      <br>
+      <br>
+      <br>
+ {% endblock %}
  </body>
-<!-- #EndTemplate -->
 </html>
 

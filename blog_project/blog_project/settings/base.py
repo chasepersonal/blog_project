@@ -81,9 +81,10 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Static file URL creation
 
 STATIC_URL = '/static/'
+
 
 # Look for static files not tied to an app
 
@@ -91,6 +92,7 @@ STATICFILES_DIR = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-# Collect static files to be used in one place
+# Collect static files
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
