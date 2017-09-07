@@ -8,9 +8,8 @@
 <!-- Latest compiled and minified CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- JQuery and Local Javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="{% static 'blog/js/main.js' %}"></script>
+<!-- Latest JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled and minified Javascript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -23,8 +22,8 @@
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-left">
-	<h3 class="center"><font color="white">Chase Weyer</font></h3>
   	<ul class="nav navbar-nav">
+		<h3 class="center"><font color="white">Chase Weyer</font></h3>
 		<li><a href="{% url 'index' %}">Welcome</a></li>
 		<li><a href="{% url 'about' %}">About</a></li>
 		<li><a href="{% url 'portfolio' %}">Portfolio and Skills</a></li>
@@ -40,7 +39,7 @@
 				</ul>
 		</li>
   	</ul>
- </div>
+</div>
 	{% block maincontent %} 
     <h2></h2>
     <div id="container">
