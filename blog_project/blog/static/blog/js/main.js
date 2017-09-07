@@ -1,13 +1,12 @@
-// Javascript for Blog Project
+// Javascript for Django Project
 
-// Function for confirmation to external link
+// Function to allow dropdown upon clicking an anchor tag
 
-function confirmLink() {
-	if (!confirm("You are about to leave this page and will be redirected to an external link that is a valid link to a personal page on a social website.\nIf this is what you wanted to do, click 'OK'.\nIf this is not what you wanted to do, click 'Cancel'.")) {
-		window.location='index.html';
+$('ul.nav li.dropdown').hover(
+	function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, 
+	function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 	}
-	else {
-		
-	}
-
-}
+);

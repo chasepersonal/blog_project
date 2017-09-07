@@ -10,6 +10,8 @@ html,body {
   overflow: hidden;
 }
 
+
+
 .navbar-fixed-left {
   width: 140px;
   position: fixed;
@@ -19,18 +21,12 @@ html,body {
 }
 
 .navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
+  float: none;  
   width: 139px;
 }
 
 .navbar-fixed-left + .container {
   padding-left: 160px;
-}
-
-/* On using dropdown menu (To right shift popuped) */
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 140px;
 }
 
 h2 {
