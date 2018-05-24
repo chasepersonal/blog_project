@@ -3,7 +3,15 @@
 {% block title %}Contact{% endblock%}
 {% block header %}<h2>Contact</h2>{% endblock %}
 {% block maincontent %}
-	  <div id="container">
+	<div id="container">
+    <p>If you have checked out my site and have any additional questions about my resume or career goals, know of a potential position that I would be intertested in, have any 
+    recommendations on how to improve my career site or personal project, have any recommendations on technologies I should be using that I haven't tried yet, or 
+    would like to network or know of any networking opportunities that I might be interested in, feel free to fill out this contact form which will go directly to my professional e-mail. 
+    Once submitted, I will take a look over it and respond as quickly as I possibly can. I look forward to hearing from you all on how to move my profession forward!
+    </p>
+  </div>
+  <br>
+  <div id="container">
 	  <form role="form" action="" method="post" novalidate>
 			{% csrf_token %}
 			{% if form.non_field_errors %}
@@ -15,7 +23,7 @@
 		{% endif %}
 
 	    {% for field in form.visible_fields %}
-    <div class="form-group">
+      <div class="form-group">
 			{{ field.label_tag }}
 
       {% if form.is_bound %}
@@ -36,10 +44,11 @@
       {% if field.help_text %}
         <small class="form-text text-muted">{{ field.help_text }}</small>
       {% endif %}
-    </div>
+      </div>
 	{% endfor %}
 	<button type="submit" class="btn btn-primary">Submit</button>
-	</form>
+    </form>
+  </div>
 {% endblock %}
 
 
