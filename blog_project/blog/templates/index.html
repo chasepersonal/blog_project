@@ -1,24 +1,25 @@
 {% extends 'base.html' %}
-<html>
-	<head>
-		<title>{% block title %}Chase Weyer - Welcome{% endblock%}</title>
-	</head>			
-<body>
+
+{% block title %}Chase Weyer - Welcome{% endblock %}
+{% block header %}<h2>Welcome</h2>{% endblock %}
 {% block maincontent %}
-<h2>Welcome</h2>
-  <div id = "container">
-    <div id="picture">
+    <div id = "container">
+      <div id="picture">
 	{% load staticfiles %}					                              		
-	<img src="{% static 'blog/images/profilephoto.jpg' %}" width="200px" height="200px">														                             	 </div>
-																		                        <h3><strong>WELCOME TO MY WEBSITE!</strong></H3>
-																					                        <p>Thank you for visiting my personal, professional website. My name is <strong>Chase Weyer</strong>, I'm <strong>30 years old</strong>, I currently reside in <b>Charleston, SC</b>, and I am looking to become a professional <strong>Web Developer/Software Engineer</strong>. If you would like to learn more <strong>About</strong> me, feel free to check out my <strong>Portfolio and Skills</strong> as well as my <strong>Resume</strong>. You can also check out my social websites, such as <strong>GitHub</strong>, <strong>StackOverflow</strong>, and <strong>LinkedIn</strong>. If you would like to go over my professional skills a bit more with me directly, or would like to just pick my brain, feel free to send me an <strong>E-Mail</strong>. I will reply as promptly as possible!</p>
+	<img src="{% static 'images/profilephoto.jpg' %}" width="200px" height="200px">
+      </div>
+      <h3><strong><i>Welcome to my Website!</strong></i></h3>
+	<p>Thank you for visiting my personal, professional website!</p>
+	<p>My name is <b>Chase Weyer</b> and I created this website
+	 to not only showcase my resume, but to display the programming skills that I have developed
+	 and let everyone know how I am progressing though the <b>Blog</b> that I have set up on this site.</p>
+	 <p>As I cam currently looking to change careers from Customer Support to Engineering, I wanted to create a place where I could show off
+	 what I have developed so far and what I am currently working on.</p>
+	 <p>You can learn more <b>About</b> me, view my <b>Portfolio and Skills</b> and my <b>Resume</b>,
+	 see what I am <b>Looking For...</b>, view my <b>Blog</b> posts to see what I've been working on,
+	 or check out my <b>Social</b> websites to get a better feel for the type of person I am. You can also
+	 <b>E-Mail</b> me by clicking on the link at the bottom of the page.</p>
 
-<p>Once again, thank you for visiting my website!
-																											                  </p>
-</div>
-
-																																			          {% endblock %}
-																																				   </body>
-</html>
-
-set tabstop=4
+    <p>Once again, thank you for visiting my website and I hope you enjoy navigating it and learning more about me!</p>
+		</div>
+{% endblock %}

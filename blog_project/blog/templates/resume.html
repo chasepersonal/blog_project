@@ -1,101 +1,66 @@
 {% extends 'base.html' %}
-<html>
-<head>
-	<title>{% block title %}Chase Weyer - Resume{% endblock %}</title>
-<!-- #EndEditable -->
-</head>
-  <body>
-     {% block maincontent %} 
-     <h2>Resume</h2>
-     <div id = "container">
-		<p>Here are my most recent professional positions held in the past 5 years. If you have any questions about any of the positions, or would like to 
-		set up an interview because my experience matches a position you have open, feel free to contact me by <a href="mailto:cpwfe87@gmail.com"><b>E-Mail</b></a>.</p>
-		<h3 class="center"><strong>Snagajob</strong></h3>
-		<p><strong>Current Employer:</strong> Started 4/2017<p>
-		<p><strong>Position Held:</strong> Customer Support Specialist - PeopleMatter</p>
-		<p>I work primarily as a Tier 1 type of customer service specialist and handle inbound phone calls, e-mails, and chats for the PeopleMatter Application Tracking software. Troubleshooting will range from password resets to explaining how to utilze in depth account settings to resolving integration issues between the PeopleMatter platform and 3rd Party payroll software to researching technical issues with the platform. Depending on the situation, resolving an issue can require collaborating with other departments from Sales to Engineering. Not only do I utilize internal company systems, but also JIRA, Slack, Okta, Salesforce, Google Drive, Zendesk, and USCIS depending on the customers situation.
+
+{% block title %}Chase Weyer - Resume{% endblock %}
+{% block header %}<h2>Resume</h2>{% endblock %}
+{% block maincontent %}
+    <div id = "container">
+		<p>Below is my most recent professional experience that showcases my blended nature of customer support and technical skills. If you have any questions about any of my work experience, or would like to know more about my work history,
+		feel free to contact me by sending me a message on my <a href="{% url 'contact' %}"><b>Contact</b></a> page.</p>
+	 </div>
+	 <br>
+	 <div id="container">
+		<h3 class="center"><strong>Snag</strong></h3>
+		<p><strong>Former Employer:</strong> Employed from April 2017 to April 2018<p>
+		<p><strong>Position Held:</strong> Customer Support Specialist</p>
+		<p>The department I was in focused on resolving technical issues through phone, chat, and e-mail for the Snag Recruiting Platform
+		Application Tracking software that ranges from providing applications, keep track of hired/separated/transferred employees, and provide electronic onboarding.
+		The tehnical issues I would have to resolve on a daily basis ranged from pinpointing the cause of a feature failing to resolving errors with the the company's API's that integrated with 3rd party payroll platforms
+		to informing customers of the most appropriate work flows to utilize for the systems features and settings to avoid potential errors.
+		<br>
+		<br>In order to fully understand customer issues with the platform, and resolve the issue in a timely manner and to make sure similar issues would not occur in the future,
+		I would take the time to carefully research tehnical errors that occurred in the platform. This would include testing user workflows when certain features fail to work as intended
+		to try and recreate the issue and pinpoint the possible origin and locating the specific where errors with the company's API's were originating within the platform and advising on the necessary solution
+		to resolve the issue. I would also use time between customer issues to test feature workflows that I was unfamiliar by using a test environment to use various workflows for different features features to
+		see if I could intentionally cause failures and researched the integration points for various client’s API’s, as well as common issues with their API integrations, to ensure that
+		I could be prepared to solve potential customer issues.
+		<br>
+		<br>
+		If I had time inbetween customer issues where there were no pressing issues to resolve, I would take that time to test feature workflows that I was unfamiliar by using a test environment to use various workflows
+		for different features features to see if I could intentionally cause failures and researched the integration points for various client’s API’s, as well as common issues with their API integrations, to ensure that
+		I could be prepared to solve potential customer issues.
+		<br>
+		<br>If there was a part of the platform or a customer issue that I was unfamilar with, and couldn't resolve through researching the issue on my own, I would consult other departments as needed such as Advanced
+		Support, Egnineering, Product, Integration, and Implementation so that I could increase my knowledge of the product and understand it more fully. If I still couldn't solve the issue on my own, such as lacking the
+		necessary resources to solve the problem, I would send the issue to the appropriate department so that it could be resolved.
+		<br>
+		<br>
+		Being on the "front lines" for customer issues also gave me to opportunity to document common features that the customers would be frustrated with, or lack thereof, and suggest ideas to the Product department on how
+		to potentially address these issues in a manner that would be practical to the user.
+		<br>
+		<br>
+		I also utilized internal web tools for customer verification and also utilized JIRA, Salesforce, Okta, and Slack so that I could effectively document and
+		track customer issues and communicate with other departments in a timely fashion to resolve customer issues quickly and efficiently.
+		<br>
+		<br>
+		Though not required for the position, I expanded my technical knoweldge by taking Advanced SQL courses (which involved such tasks as multi-table inquiries and macros) and attended seminars from the Engineering team
+		(ranging from machine learning to AWS deployments) to learn how to better understand the platform and potentially solve more advanced technical issues.
+	 </div>
+	 <br>
+	 <div id="container">
 		<h3 class="center"><strong>Benefitfocus</strong></h3>
 		<p><strong>Former Employer:</strong> Employed from 8/2016 to 10/2016</p>
 		<p><strong>Position Held:</strong> Benefits Administrator</p>
-		<p>I worked primarily as a Tier 1 type of customer service specialist and only handled inbound phone calls for a software engineering company
-		that outsourced a medical benefits platform, as well as basic call center services, to customers. I would typically handle customer 
-		questions such as password resets, unlocking locked accounts, providing forgotten usernames, providing medical benefits information, 
-		enrolling customers in medical benefits, advise customers where to send documentation if needed, and escalate necessary issues to the
-		appropriate manager/department. All of this would have to be done after caller identification. If a caller fails identification, 
-		I would be unable to assist them. All calls were tracked and monitoried in InContact for quality assurance and all case notes would 
-		have to be documentated in SalesForce. I also became familiar with the Octa system, as it allowed single sign-on for all of the applications 
-		related to my position, as well as the ticketing system JIRA.
+		<p>Resolved technical customer issues by phone that would arise from customers who utilized the paid benefits platform. This would include addressing simple issues such as password resets and unlocking user accounts
+		to more advanced issues such as explaining how to use the proper workflows for electing medical benefits and locating the origin of failure for a particular feature. I would ensure that I could assist the customer
+		as best as I possibly could by making sure that I could either provide them all of the information that they would need to make sure they
+		utilized the platform correctly or make sure that I could locate the origin of failure for a particular and resolve their issue in a timely manner. If I could not resolve the issue on my own, I would reach out to the
+		an individual or department that would be best able to assist me and help me understand the issue better so that I could resolve it for the customer on my own. If I could not solve the issue on my own, due to lack of
+		resources, I would send it to the appropriate department so that they could resolve the issue in a timely manner.
 		<br>
-		<br>The position was a temporary to hire contract through the staffing agency Aerotek and I left after two months as the position was 
-		conflicting with my school work and it was not as tech based as I was hoping it was going to be. I left on good terms as my manager 
-		informed me that I would be welcomed back at anytime.
+		<br>
+		I also utilized internal web tools for customer verification and also utilized JIRA, Salesforce, Okta, and Slack so that I could effectively document and
+		track customer issues and communicate with other departments in a timely fashion to resolve customer issues quickly and efficiently.
 		</p>
-		<h3 class="center"><strong>Nordstrom Rack</strong></h3>
-		<p><strong>Current Employer:</strong> Started work on 8/2015
-		<br><strong>Location:</strong> Mount Pleasant, SC
-		<br><strong>Starting Position:</strong> Service Experience (8/2015 to 1/2016)
-		<br><strong>Current Position:</strong> Inventory and Merchandising (2/2017 - Present)
-		<br><strong>Other Positions:</strong> Rover (1/2016 to 10/2016) , Salesman-Shoes (10/2016 to 2/2017)</p>
-		<p class="center"><strong>Service Experience</strong></p>
-		<p>I started my employment as a Service Experience representative. This was a standard, retail cashier/customer service position which 
-		involved POS transactions, promoting rewards cards/debit cards/credit cards, handling customer returns, and directing incoming calls to the 
-		appropriate department. Though the position was flexible, due to the restrictive nature of cashier nature of the position, I moved to the 
-		Rover department.</p> 		
-		<p class="center"><strong>Rover</strong></p>
-		<p>As a Rover, I moved around various departments and learned their intricacies. In addition to working in Service Experience, I worked 
-		in the Stock, Shoes, Accessories, and Apparel departments. I became most familiar with the Shoes and Men's Department.</p>
-		<p class="center"><strong>Shoes</strong></p>
-		<p>Though being a Rover offered felxability, I recently became a salesman in the Shoes department as I wanted some stability and it was 
-		one of the departments I enjoyed being in. As a shoe salesman, I assist customers in shoe sales, finding certain shoes and shoe products,
-		returning shoe products to the floor, and ensuring the overall cleanliness of the department.
-		</p>
-		<p class="center"><strong>Inventory and Merchandising</strong></p>
-		<p>As of the beginning of February, our store changed it's departments from specific ones to more generic ones. Now the store is split into 
-		Service Experience and Inventory and Merchandising. I got assigned to the Inventory and Merchandising team and it is very similar to the Rover 
-		position that I held before. The only difference is that my focus is more on keeping the floor clean and putting product on the floor than 
-		promoting and cross selling customer rewards progragms.</p>
-		<h3 class="center"><strong>CBC Companies</strong></h3>
-		<p><strong>Previous Employer:</strong> Employed from 7/2012 to 6/2015
-		<br><strong>Location:</strong> Pittsburgh, PA
-		<br><strong>Starting Position:</strong> Mortage Processor for CBC Innovis Dept (7/2012 - 8/2014)
-		<br><strong>End Position:</strong> Customer Support Agent for AmRent Dept (8/2014 - 6/2015)</p>
-		<p class="center"><strong>CBCInnovis</strong></p>
-		<p> I started off s a Mortgage Processor in the CBCInnovis department. My main focus was to process credit checks for mortgage companies that ranged 
-		from verifying a particular account is current on it's payments to verifying ownership of a particular credit account.
-		<br>
-		<br>As we would have to deal with very sensative customer information regarding mortgages, we had to adhere to strict security 
-		guidlines as well as the FCRA. This would sometimes require performing conference calls, faxing in a written authorization,
-		or verifying company documents depeding on the particular bank or mortgage lenders security preferences. I also got into
-		the habit of shredding documents and locking my computer.
-		<br>
-		<br>We were assigned to specific queues for work, which would be made up of one or may customers depending on the size of the
-		customer and the volume of work we received from them. And, due to the volume of work sometimes, we were assigned to a 
-		call overflow depending on the day of the week.
-		<br>
-		<br>One day, after my managers lauded me on the quality of my customer service and processing work, I was assigned my
-		own specific queue that delt with a big customer, named Meridian Mortgage, as well as a few smaller companies. Meridian
-		had speific guidlines I had to follow, especially when closing on a deal, which meant I would sometimes have to drop the 
-		other work I was doing and focus on completing their credit checks. Upon my transfer to the AmRent Department, I was
-		notified by my superiors that Meridian Mortgage was very satisfied with the work I completed.
-		<br>
-		<br>And somehow I won the Employee of the Month award for 4/2014 for "Great Customer Service Work" or something
-		along those lines.</p>
-		<p class="center"><strong>AmRent Dept</strong></p>
-		<p> While in the AmRent Deptment, my main focus was to Troubleshoot customer technical issues, by phone and e-mail, ranging from 
-		issues with various internet browsers (Internet Explorer, Google Chrome, Mozzilla Firefox, etc.) to issues concerning the companies 
-		web based portal such as correcting or adding an IP Address to ensuring the settings on a customer's web based account are set up, and 
-		running, correctly.
-		<br> 
-		<br>Besides that, I processed customer requests for rental verifications, employment verifications, and background checks for rental 
-		applicants as well as business credit reports for business applicants through phone calls as well as e-mail through 
-		Microsoft Outlook, which I would have to often multitask with troubleshooting customer's technical issues depending
-		on the workload for that day. Thankfully, I can perform data entry at 73 wpm thorough our web based application, so it
-		wasn't too much of a hassle. And we had Microsoft Excel pages for certain necessary information which I would help
-		maintain, so it made multiasking a little bit easier.
-		<br>I did such a good job with my customer service and processing that I would get compliments from
-		my manager when going over call reviews and production Q&A.</p>
-      </div>
+	</div>
  {% endblock %}
- </body>
-</html>
 

@@ -1,20 +1,23 @@
 {% extends 'base.html' %}
-<head>
-	<title>{% block title %}Chase Weyer - Looking For...{% endblock %}</title>
-</head>
-  <body>
-  {% block maincontent %}
-  <h2>Looking For...</h2>
-  <div id = "container">
-    <p>I currently work for <b>Snagajob</b> and <b>Nordstrom</b> and I am looking to move forward with these companies into a position that will help me combine my previous customer service experience with my current IT knoweldge so that I can further advance my customer centric type of programming. Ideally, I would prefer a <b>Jr. Software Engineer</b> position, but I also wouldn't mind a <b>QA</b> position that would allow me to take a user centric approach to testing or a more blending customer support/IT position that would allow me to analyze customer issues while also allowing me to fix issues with bugs through coding.</p>
 
-<p>While I would love to move within my current companies, I will take a considerable look into any of the positions I mentioed above and if I feel the company is a good fit for me. I am rather laid back and tend to work at my own pace while accomplishing my goals. I also love working in groups so I can bounce around ideas and come up with new ones easier. As such, I would need to be part of a company that will allow to be my laid back self while working individually on projects that sometimes require group input. I also prefer an environment that is socially active and wants their employees to not only engage with each other, but also make the work they do enjoyable</p>
-    <p>Location is not an issue and I am more than willing to relocate if I need to.</p> 
-    <p>If you have a position  you think I would be interested in, you can either send me an <a href="mailto:cpwfe87@gmail.com">E-mail</a> or reach out to me 
+{% block title %}Chase Weyer - Looking For...{% endblock %}
+{% block header %}<h2>Looking For...</h2>{% endblock %}
+{% block maincontent %}
+    <div id = "container">
+      <p>I am currently looking for an opportunity that will take full advantage of my unique customer focused approach to programming by allowing me to test features and systems, even if it means intentionally using it
+    in the wrong so, so that I can not only fully understand how the platform works, but so that I can also make sure that the system is working as intended for the everyday user and ensure that it gets improved in a practical
+    manner that fully benefits the everyday user. Not only that, but I am also looking for a position that will allow me to collaborate with other departments so that I can not only improve upon my quality of work, but also
+    ensure that the platform can provide the best possible user experience by ensuring the best possible solutions are able to be brought to the forefront and implemented.
+    <br>
+    <br>
+    With this unique take on engineering, I believe my skill set would work best in an engineering position
+    focused on testing multiple areas of a web or console application. As such, I am looking for positions such as a <b>Quality Assurance Eningeer</b>, <b>Software Engineer in Test</b> or a
+    <b>Production Support Engineer/Tier 3 Engineer</b> type of position that would allow me to test bugs and ensure the product is working correctly for the customer and figure out how a product can be enhanced through
+    collaborating with other departments. I also wouldn't mind an <b>Advanced Customer Support</b> type of position where I can address bug related issues and intermediate technical issues, but it would also have to be a position where I can
+    at least utilize some of my programming knowledge so that I can fully utilize the testing frameworks that I have learned over the years.
+    <p>I do not mind relocating for a position or working remotely, so my current location is not a restriction</p>
+    <p>If you have a position  you think I would be interested in, you can either send me a message on my <a href="{% url 'contact' %}"><b>Contact</b></a> page or reach out to me
     on one of my <b>Social</b> websites. <b><i>I will reply as promptly as possible!</i></b>.
-  </p>
-</div>
- {% endblock %}
- </body>
-</html>
+    </div>
+{% endblock %}
 

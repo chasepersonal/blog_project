@@ -1,39 +1,41 @@
 {% extends 'base.html' %}
-<head>
 
-	<title>{% block title %}Chase Weyer - Portfolio and Skills{% endblock %}</title>
-	<body>
-	{% block maincontent %} 
-	<h2>Portfolio</h2>
-	<div id = "container">
-		<p>This page will breifly go over some of my recent accomplishments in the tech world as well as the technical skills 
+{% block title %}Chase Weyer - Portfolio and Skills{% endblock %}
+{% block header %}<h2>Portfolio</h2>{% endblock %}
+{% block maincontent %}
+      <div id = "container">
+		<p>This page will breifly go over some of my recent accomplishments in the tech world as well as the technical skills
 		that I have acquired through college, my professional career, and personal experimentation.</p>
-		<p>If you wish to view some of these further, you can use the links below to check out the 
+		<p>If you wish to view some of these further, you can use the links below to check out the
 		source code I have on <strong>GitHub</strong>.
 		<p>If you would like to visit my <strong>GitHub</strong> site, or any other social site I have, feel free to click on the <strong>Social</strong>
 		link in the navigation bar.</p>
 	</div>
 	<br>
 	<div id = "container">
-		<h3 class="center"><strong>Collegiate Projects</strong></h3>
-		<p class="center"><strong>Retro World</strong></p>
-		<p>As part of my Web Development with Adobe Dreamweaver class, I developed a website for a fake (even though I would
-		like it be real) retro video game company simply called Retro World. Though I built it through Adobe Dreameaver, 
-		I used mostly self made icons, done in the 8-bit style, to keep the feeling very retro.
-		<br>
-		<br>Follow the link below to view the completed website:	
-		<br><a href="course_project/index.html">Retro World Project</a>
+	    <h3 class="center"><strong>Projects</strong></h3>
+	    <p class="center"><strong>Professional Website and Blog</strong></p>
+	    <p>This professional website of mine is also one of my personal projects. It is also the first project I have completed after I graduated college in February 2017. It started off as a simple static website with CSS, but I have sense transitioned it to the Django framework so that I could add an admin only blog to the site.
+	    I also added Bootstrap to make the CSS more fluid and clean.</p>
+	    <p>Follow the links below to view the source code on <strong>GitHub</strong>:
+	    <br><a href="https://github.com/metalhero/blog_project">Blog Project</a></p>
+	    <p class="center"><strong>SavePoint</strong></p>
+	    <p>This is a continuation of my collegiate Video Game Database projects. I want to make this into a fully functional social site so that users can share their video game list with others, make recommendations, and post to other social sites.
+	    I am building it using the ASP.NET Framework with ASP.NET Core 2.0 as the base, but I will be adding more to this as this is a pretty ambious venture as I learn to develop a fully functional website in a full stack manner.
+	    I will be building off this project in stages, so make sure to keep track of my <a href="{% url 'post_list' %}"><strong><font color="black">Blog</font></strong></a> to get the most up to date information on this project.</p>
+	    <p>You can view the source code on <b>GitHub</b> below:</p>
+        <p><a href="https://github.com/metalhero/SavePoint">Save Point Project</a></p>
 		<p class="center"><strong>Rolodex C++ Project</strong></p>
-		<p>As a final project for my C++ course, I developed a program that acts like a Rolodex where you can display all contacts, 
+		<p>As a final project for my C++ course, I developed a program that acts like a Rolodex where you can display all contacts,
 		add contacts, search for a specific contact, flip to the next contact, and delete contacts. I constructed this using
 		the Standard Template Library.
 		</p>
 		<p>Follow the link below to view the source code on <strong>GitHub</strong>:
-		<br><a href="https://github.com/metalhero/rolodex">Rolodex C++ Project</a></p>	
+		<br><a href="https://github.com/metalhero/rolodex">Rolodex C++ Project</a></p>
 		<p class="center"><strong>Video Game Database Perl/Python/PHP Project</strong></p>
 		<p class = "box">As a series of projects for my Survey of Perl/Python/PHP course, I created a simple database that would allow the user to
 		input game information, such as game title, game type, and the release year, sort it, then save it as a text file
-		to a hard drive in all three of the languages I learned in the course. Unfortunately, my PHP version is the only 
+		to a hard drive in all three of the languages I learned in the course. Unfortunately, my PHP version is the only
 		one with web applications. I created the Perl and Python versions simply through a compiler, so they will have to
 		be launched through the command line.
 		</p>
@@ -41,26 +43,24 @@
 		<br><a href="https://github.com/metalhero/video-game-database-perl">Video Game Database Perl Version</a>
 		<br><a href="https://github.com/metalhero/video-game-database-python">Video Game Database Python Version</a>
 		<br><a href="https://github.com/metalhero/video-game-database-php">Video Game Database PHP Version</a></p>
-	<h3 class="center"><strong>Post-Collegiate Projects</strong></h3>
-	<p class="center"><strong>Professional Website and Blog</strong></p>
-	<p>This professional website of mine is also one of my personal projects. It is also th first I have completed after I graduated college in February 2017. It started off as a simple static website with CSS, but I have sense transitioned it to the Django framework so that I could add a blog to the site. I also added Bootstrap to make the CSS more fluid and clean. Right now, I am the only one able to make posts through the Admin fuction of the Django framework. However, it will post all posts created in chronological order with a timestamp.</p>
-	<p>Follow the links below to view the source code on <strong>GitHub</strong>:
-	<br><a href="https://github.com/metalhero/blog_project">Blog Project</a></p>
-	<p class="center"><strong>SavePoint</strong></p>
-	<p>This is a continuation of my collegiate Video Game Database projects. I am extending on those projects from taking the simple list generated by the program itself to a web application that fully utilizes a SQL Database with user authentication. I don't plan on stopping there as my end goal for this project is for this to be a social site for video game enthusiasts to compare game lists and, possibly, share games. As that is an ambitious goal, I will be utilizing Visual Studio Community so that it will save me time as I make this project more and more in depth. I will also be building off this project in stages, so make sure to keep track of my <a href="{% url 'post_list' %}"><strong><font color="black">Blog</font></strong></a> to get the most up to date information on this project.</p>
-	<p>I will also add a GitHub page once I get this project fully up and running</p>
 	</div>
 	<br>
 		<h2>Skills</h2>
 	<div id = "container">
 		<p class="center"><strong>Programming Languages</strong></p>
-		<p class="center">C, C++, C#, Java, PHP, Perl, Python, Ruby</p>
-		<p class="center"><strong>Developer Tools</strong></p>
-		<p class="center">AWS, PHP MyAdmin, MySQL, MariaDB, RAILS, .NET, Git, Apache</p>
-		<p class="center"><strong>Operating Systems</strong></p>
-		<p class="center">Windows, Linux</p>
+		<p class="center">C, C++, C#, Java, PHP, Perl, Python, Ruby, Javascript</p>
+		<p class="center"><strong>Testing Tools</strong></p>
+		<p class="center">Cucumber, Selenium, Watir, Postman, NUnit, Jenkins</p>
+		<p class="center"><strong>Databases</strong></p>
+		<p class="center">MySQL, PostgreSQL, MongoDB, SQL Server</p>
+		<p class="center"><strong>Frameworks</strong></p>
+		<p class="center">RAILS, ASP.Net, Django, Node.js</p>
+		<p class="center"><strong>Infrastructure</strong></p>
+		<p class="center">Amazon Web Services, Docker</p>
+		<p class="center"><strong>Web Development</strong></p>
+		<p class="center">HTML, CSS, SASS, jQuery, Bootstrap</p>
+		<p class="center"><strong>IDE/Text Editor</strong></p>
+		<p class="center">Visual Studio, VIM, Eclipse, Atom, Visual Studio Code, Sublime</p>
 	</div>
-	{% endblock %}
-	</body>
-</html>
+{% endblock %}
 

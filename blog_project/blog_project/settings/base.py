@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Allowed Hosts for Website
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'widget_tweaks',
 ]
 
 # Middleware
@@ -122,3 +123,11 @@ STATICFILES_DIR = (
 # Collect static files to be used in one place
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Settings to allow e-mail to send from app to a server
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'chase.p.weyer@gmail.com'
+EMAIL_HOST_PASSWORD = '@n0th3r$3cur3P@$$wyrd'
+EMAIL_PORT = 587

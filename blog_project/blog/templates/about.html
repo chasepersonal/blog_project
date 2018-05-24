@@ -1,29 +1,32 @@
 {% extends 'base.html' %}
-<head>
-<title>{% block title %}Chase Weyer - About Me{% endblock%}</title>
-</head>
-  <body>
-  {% block maincontent %}
-  <h2> About</h2>
-  <div id="container">
-    <p>My name is <b>Chase Weyer</b>. I am a <b>29 year old video game, 
-	anime, funny meme, and baseball enthusiast that just finished working towards my Second Bachelor's Degree in Information 
-	Technology at the University of Massachusetts - Lowell</b> as of February 1st, 2017.</p> 
-	<p>I'm sure your thinking <i>"Why a Second Bachelor's Degree?</i>". 
-	Well, I enjoyed my original <b>Bachelor's Degree in History from Indiana University of Pennsylvania</b> and all of 
-	the work I put towards it, but, over time, it became something that I wanted to pursue as hobby more than a career. 
-	As my love of history was becoming more of a hobby, I delved more into my more tech natured hobbies, and I felt it 
-	was something I wanted to expand on and possibly turn into a career. Being in cutomer service and holding a previous 
-	Tier 1 position only strengthened my resolve. As such, I went back to school to pursue my 
-	<b>Second Bachelor's Degree in Information Technology and have not looked back.</b></p>
-	<p>Now that I have completed my degree,   
-	I hope to expand on my programming skills and eventually become a <b>software engineer/web developer</b> further down the road. 
-	Right now, however, I am looking for a full time position that will utilize both the customer service skills developed through my professional career, 
-	which can be viewed on my <a href="resume.html">Resume</a> page, and the technical skills that I have developed through college and personal experimentation, 
-	which can be viewed on my <a href="portfolio.html">Portfolio and Skills</a> page. If you would like to know more about what I am <a href="looking_for.html">Looking For</a>, 
-	you can click the previous link, the sublink under the <b>Professional</b> tab, or the link at the bottom of the page.</p>
-  </div>
-  {% endblock %}
- </body>
-</html>
+
+{% block title %}Chase Weyer - About Me{% endblock%}
+{% block header %}<h2>Resume</h2>{% endblock %}
+{% block maincontent %}
+    <div id="container">
+     <h3><i>Who Am I?</i></h3>
+    <p>My name is <b>Chase Weyer</b>, I'm <b>31 years old</b>,
+    and I enjoy watching anime, playing video games, and visiting new breweries or coffee shops whenever a new one opens up.</p>
+    <p>I also enjoy travelling to the point that I recently completed an overseas trip to Ireland and the United Kingdom and I can't wait to go back.</p>
+    <p>I'm originally from the city of <b>Pittsburgh, PA</b> and I moved to <b>Charleston, SC</b> about 2 and half years ago so that I could
+    be closer to my family while I completed my Bachelor's Degree in Information Technology.</p>
+    <p>I decided to go this route so that I could expand on my previous customer customer support experience with software by learning about different programming languages,
+    frameworks, and software integrations so that I could fully understand software issues and make sure that I could fully resolve software issues and give the best possible user experience as we are all
+    software users at some point and deserve to have the best possible user experience when using a piece of software.</p>
+    <p>Now that you know a bit more about me, it's time to go into the next question.</p>
+    <h3><i>Where Am I Going?</i></h3>
+    <p>Besdies visting new places and people, I am looking forward to advancing in a career that will allow me to utilize my unique approach to programming that focuses on improving the user experience for pieces of
+    software by locating and testing all possible areas of a peice of software where information can overlap or drop off so that it can provide the best possible user experience. </p>
+    <p>To this end, I am always looking to enhance my programming and technical skill set in any way as I can so that I can have a better understanding how all areas of web applications operate and interact
+    with one another. I take this approach
+    not only to find out where my stengths and weaknesses lie, but I also want to understand as much as possible so that I can try and know as much as possible where a pain point is and what action needs to be taken
+    even if I don't have the skills to fully address it. Sometimes I even intentionally break the features that I work on to see if I can find new ways to improve upon it and make it the best that it can
+    possibly be.</p>
+    <p>I keep my new learnings updated in my <a href="blog.html"><b>Blog</b></a>, so feel free to check it out if you would like to see what new things I'm working on!</p>
+    <p>If you would like to learn more about what I am <a href="looking_for.html"><b>Looking For...</b></a>, are curious about my <a href="resume.html"><b>Resume</b></a>,
+     want to know what kind of <a href="portfolio.html"><b>Portfolio and Skills</b></a> I have developed, or would just like to reach out to me to learn more, feel free to navigate to the appropriate links or use the link at the bottom of the page to
+     send me an <a href="mailto:cpwfe87@gmail.com"><b>E-Mail</b></a></p>
+    <p>I hope you enjoy learning more about me and navigating the site. I built this site from scratch, so feel free to let me know how user friendly I made it!</p>
+    </div>
+{% endblock %}
 
