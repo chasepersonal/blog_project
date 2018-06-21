@@ -1,0 +1,10 @@
+{
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_about_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_contact_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_index_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_looking_for_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_portfolio_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_post_list_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_resume_page": true, 
+  "blog_project/blog/tests/unit/test_navigation.py::TestNavigation::test_success_page": true
+}

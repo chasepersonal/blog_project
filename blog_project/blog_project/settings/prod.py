@@ -11,7 +11,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # Allowed Hosts for website
 
-ALLOWED_HOSTS = ['metalhero87.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.chaseweyer.com']
 
 # Debut turned off for production
 

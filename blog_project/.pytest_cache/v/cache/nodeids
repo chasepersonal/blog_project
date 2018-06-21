@@ -1,0 +1,10 @@
+[
+  "blog/test/unit/test_navigation.py::TestNavigation::test_about_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_contact_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_index_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_looking_for_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_portfolio_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_post_list_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_resume_page", 
+  "blog/test/unit/test_navigation.py::TestNavigation::test_success_page"
+]

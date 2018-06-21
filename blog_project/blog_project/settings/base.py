@@ -1,15 +1,30 @@
 #Django base settings
 
 import os
+import sys
 
 # Build paths inside the project that will link from the base path
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Allowed Hosts for Website
+ALLOWED_HOSTS = ['127.0.0.1']
 
-ALLOWED_HOSTS = ['localhost']
+# Secret Key
+SECRET_KEY = 'yol#r_w_==rr%$!5%j0wqh)wcu^uvl-d9%(*&n+u*7c&0kfag0'
 
+# Debug set to True for Development Purposes
+DEBUG = True
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blog_project',
+        'USER': 'admin_blog_project',
+        'PASSWORD': 'IH@t3P30pl3!',
+        'HOST': 'localhost',
+        'PORT':'', 
+    }
+}
 
 # Application definition
 
@@ -63,19 +78,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'blog_project.wsgi.application'
 
 
-# Database
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'metalhero87$blog_project',
-        'USER': 'metalhero87',
-        'PASSWORD': '100%Cr@ftB33r',
-        'HOST': 'metalhero87.mysql.pythonanywhere-services.com',
-        'PORT':'',
-    }
-}
-
 
 # Password validation
 
@@ -95,6 +97,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Routing for fixtures
+
+FIXTURE_DIRS = (
+    '~/Documents/Django/Projects/blog_project/fixtures/',
+)
 
 # Internationalization
 

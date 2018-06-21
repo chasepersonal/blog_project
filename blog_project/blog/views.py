@@ -41,7 +41,7 @@ def post_list(request):
 
 def contact(request):
     
-    # Upon posting informaiton, gather the post data
+    # Upon posting information, gather the post data
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
